@@ -1,7 +1,8 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  if (req.url = '/') {
+  //eror fixed
+  if (req.url == '/') {
     res.statusCode = 200;
     res.end('Hello World');
   } else {
